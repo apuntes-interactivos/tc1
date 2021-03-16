@@ -20,3 +20,4 @@ unit_tests/coverage
 *.log
 *.out
 *.vscode/
+.ipynb_checkpoints/
