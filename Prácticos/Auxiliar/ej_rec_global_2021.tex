@@ -146,7 +146,7 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{Trabajo práctico 6 Sistemas Polifásicos}
+    \title{Ejercicios Transformada de Laplace}
     
     
     
@@ -361,108 +361,57 @@
     
     \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
     
-    \title{
-    	\textsc{\includegraphics[width=0.55\textwidth]{logoUTN.jpg}} ~\\
-    	{\large Departamento de Electr\'onica}\\ 
-    	[0.1cm]
-    	{\Huge{Teoría de los Circuitos 1}} \\
-    	[0.25cm]
-    	{\Large{Trabajo Pr\'{a}ctico N$^{\text {o}}$6:  Sistemas Polifásicos}		
-    		\\
-    }}
-    \author{}
-    \date{}
-
+\title{
+	{\large Departamento de Electrónica}\\ 
+	[0.1cm]
+	{\Huge{Teoría de los Circuitos 1}} \\
+	[0.25cm]
+	{\Large{Ejercicios Transformada de Laplace}		\\
+}}
+    
+\author{}
+\date{}
 \begin{document}
-    
-    \maketitle
-    
+	\maketitle
+   
     
 
-\hypertarget{circuitos-polifuxe1sicos}{%
-\section*{Enunciados}\label{circuitos-polifuxe1sicos}}
+    
 
-    \textbf{Ejercicio 1:} Un sistema trifásico de tres conductores, alimenta
-una carga en triángulo compuesta por tres impedancias iguales.
-Determinar las corrientes de fase y de línea, y trazar el diagrama
-fasorial. Donde \(V_{AC}=150\ /240^{\circ}V\)
-\(V_{CB}=150\ /0^{\circ}V\) \(V_{BA}=150\ /120^{\circ}V\)
-\(Z_c=25/60^{\circ}\Omega\)
+    Dado el siguiente circuito:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Representar en dominio de la frecuencia compleja s
+\item
+  Obtener la función de transferencia
+\item
+  Encontrar la respuesta al escalón
+\end{enumerate}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Trabajo práctico 6 Sistemas Polifásicos_files/Trabajo práctico 6 Sistemas Polifásicos_2_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{ej_rec_global_2021_files/ej_rec_global_2021_2_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
-    \textbf{Ejercicio 2:} Dado el circuito de la figura encontrar el valor
-de \(I_0\) y determinar si se trata de un circuito trifásico equilibrado
-o desequilibrado. Justificar su respuesta.
-\(V_1=120V \angle 0^{\circ}\); \(V_2=120V \angle -120^{\circ}\);
-\(V_3=120V \angle 120^{\circ}\).
+    Dado el siguiente circuito:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Representar en dominio de la frecuencia compleja s
+\item
+  Obtener la función de transferencia
+\item
+  Encontrar la respuesta a $v_i(t)=3 \delta(t)$
+\end{enumerate}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Trabajo práctico 6 Sistemas Polifásicos_files/Trabajo práctico 6 Sistemas Polifásicos_4_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{ej_rec_global_2021_files/ej_rec_global_2021_4_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
-    \textbf{Ejercicio 3:} Se conectan en triángulo tres impedancias iguales
-de \(25/76^{\circ}\Omega\) a un sistema trifásico de tres conductores de
-\(125 V\) y secuenca ABC. Hallar las intensidades de corriente de línea.
-
-    \textbf{Ejercicio 4:} Una carga equilibrada con impedancias de
-\(65 \angle -20^{\circ}\Omega\) se conecta en estrella a un sistema trifásico
-de tres conductores, \(480V\) y secuencia CBA. Hallar las intensidades
-de corriente de línea y la potencia total.
-
-    \textbf{Ejercicio 5:} Tres impedancias idénticas de
-\(9/-30^{\circ}\Omega\) en triángulo y tres impedancias de
-\(5/45^{\circ}\Omega\) en estrella se conectan al mismo sistema
-trifásico de \(3\) conductores, \(480V\) y secuencia ABC. Hallar el
-módulo de la corriente de línea.
-
-    \textbf{Ejercicio 6:} La salida de la fuente trifásica, equilibrada y de
-secuencia ABC que se muestra en la figura, es de \(60KVA\) con un factor
-de potencia en retardo de \(0,96\). El voltaje de línea en la fuente es
-\(680V\). Encontrar el voltaje de línea en la carga y la potencia
-compleja total en los terminales de la carga.
-
-\includegraphics{e6.png}
-
-    \textbf{Ejercicio 7:} Tres cargas inductivas desiguales se conectan
-entre las fases \textbf{a-b}, \textbf{b-c} y \textbf{c-a} de un sistema
-trifásico. Los voltajes entre fases son iguales todos a \(230 V\),
-estando \(V_{ab}\) adelantado de \(V_{bc}\). La primera carga toma
-\(100A\) con un factor de potencia de \(0,707\), la segunda toma
-\(150A\) con un factor de potencia de \(0,8\) y la tercera toma
-\(28,4KW\) con un factor de potencia de \(0,5\). Calcular:
-
-a- Los valores de las corrientes de línea. b- ¿Qué indicarían dos
-vatímetros conectados según el método de los dos vatímetros, si sus
-bobinas de corriente están en las fases a y b.
-
-    \hypertarget{referencias}{%
-\subsubsection*{Referencias}\label{referencias}}
-
-Secuencia positiva o ABC:
-
-$V_{AB} = V_L \ \angle 120^{\circ} $ \\
-$V_{BC} = V_L \ \angle 0^{\circ} $ \\
-$V_{CA} = V_L~\angle 240^{\circ} $ \\
-$V_{AN}= \frac{V_L}{\sqrt{3}}~\angle 90^{\circ} $ \\
-$V_{CN}= \frac{V_L}{\sqrt{3}}~\angle-30^{\circ} $ \\
-$V_{BN}= \frac{V_L}{\sqrt{3}}~\angle-150^{\circ} $
-
-Secuencia negativa o CBA
-
-$V_{AB} = V_L \ \angle 240^{\circ} $ \\
-$V_{BC} = V_L \ \angle 0^{\circ} $ \\
-$V_{CA} = V_L~\angle 120^{\circ} $ \\
-$V_{AN}= \frac{V_L}{\sqrt{3}}~\angle -90^{\circ} $ \\
-$V_{BN}= \frac{V_L}{\sqrt{3}}~\angle30^{\circ} $ \\
-$V_{CN}= \frac{V_L}{\sqrt{3}}~\angle150^{\circ} $
-
-
-\includegraphics{secuencias.png}
 
     % Add a bibliography block to the postdoc
     
