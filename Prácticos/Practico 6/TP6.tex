@@ -1,0 +1,164 @@
+% ***********************************************
+%***********COSAS A MEJORAR O CORREGIR***********
+%
+%
+%
+%
+%
+%
+%
+% ***********************************************
+% Preamble
+% ---
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+% ---
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{layout}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{lastpage}
+\usepackage{tabto}
+\usepackage{xcolor}
+\usepackage[a4paper, top=1 in,bottom=1in, left=1 in, right=0.7 in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{comment}
+\usepackage{svg}
+
+
+
+
+\lhead{\footnotesize Teoría de los circuitos 1 - Año \the\year{} Ver. 2022.01.12}
+\chead{}
+\rhead{\footnotesize Trabajo Práctico N$^\text o$6: Sistemas polifásicos.}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+	\textsc{\includegraphics[width=0.35\textwidth]{logoUTN.jpg}} ~\\
+	{\large Departamento de Electr\'onica}\\ 
+	[0.1cm]
+	{\Huge{Teoría de circuitos 1}} \\
+	[0.25cm]
+	{\Large{Trabajo Práctico N$^{\text {o}}$6: Sistemas polifásicos}		\\
+}}
+\author{}
+\date{}
+    
+\begin{document}
+	\maketitle
+	
+
+\begin{enumerate}
+	
+% ***********************************************
+% 					Ejercicio 1
+% ***********************************************
+
+\item Un sistema trifásico de tres conductores, alimenta una carga en triángulo compuesta por tres impedancias iguales. Determinar las corrientes de fase y de línea, y trazar el diagrama fasorial. Donde $V_{AC}=150\ /240^{\circ}V$ $V_{CB}=150\ /0^{\circ}V$ $V_{BA}=150\ /120^{\circ}V$ $Z_c=25/60^{\circ}\Omega$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/1.png}
+	\label{e1}
+\end{figure}
+
+
+% ***********************************************
+% 					Ejercicio 2
+% ***********************************************
+\item Dado el circuito de la figura encontrar el valor de $I_0$ y determinar si se trata de un circuito trifásico equilibrado o desequilibrado. Justificar su respuesta.
+
+$V_1=120V \angle 0^{\circ}$;
+$V_2=120V \angle -120^{\circ}$;
+$V_3=120V \angle 120^{\circ}$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/2.png}
+	\label{e2}
+\end{figure}
+
+% ***********************************************
+% 					Ejercicio 3
+% ***********************************************
+\item Se conectan en triángulo tres impedancias iguales de $25/76^{\circ}\Omega$ a un sistema trifásico de tres conductores de $125 V$ y secuenca ABC. Hallar las intencidades de corriente de línea.
+
+
+% ***********************************************
+% 					Ejercicio 4
+% ***********************************************
+\item Una carga equilibrada con impedancias de $65/-20^{\circ}\Omega$ se conecta en estrella a un sistema trifásico de tres conductores, $480V$ y secuencia CBA. Hallar las intensidades de corriente de línea y la potencia total.
+
+
+
+% ***********************************************
+% 					Ejercicio 5
+% ***********************************************
+\item Tres impedancias idénticas de $9/-30^{\circ}\Omega$ en triángulo y tres impedancias de $5/45^{\circ}\Omega$ en estrella se conectan al mismo sistema trifásico de $3$ conductores, $480V$ y secuencia ABC. Hallar el módulo de la corriente de línea.
+
+% ***********************************************
+% 					Ejercicio 6
+% ***********************************************
+\item La salida de la fuente trifásica, equilibrada y de secuencia ABC que se muestra en la figura, es de $60KVA$ con un factor de potencia en retardo de $0,96$. El voltaje de línea en la fuente es $680V$. Encontrar el voltaje de línea en la carga y la potencia compleja total en los terminales de la carga.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/3.png}
+	\label{e6}
+\end{figure}
+% ***********************************************
+% 					Ejercicio  7
+% ***********************************************
+\item Tres cargas inductivas desiguales se conectan entre las fases **a-b**, **b-c** y **c-a** de un sistema trifásico. Los voltajes entre fases son iguales todos a $230 V$, estando $V_{ab}$ adelantado de $V_{bc}$. La primera carga toma $100A$ conn un factor de potencia de $0,707$, la segunda toma $150A$ con un factor de potencia de $0,8$ y la tercera toma $28,4KW$ con un factor de potencia de $0,5$. 
+\begin{enumerate}
+	\item Calcular loos  valores de las corrientes de línea.
+	\item ¿Qué indicarían dos vatímetros conectados según el método de los dos vatímetros, si sus bobinas de corriente están en las fases a y b.
+\end{enumerate}
+
+\section*{Referencias}
+Secuencia positiva o ABC:
+
+$V_{AN}= \frac{V_L}{\sqrt{3}}\ \angle0^{\circ}  $    \\
+$V_{BN}= \frac{V_L}{\sqrt{3}}\ \angle-120^{\circ}  $    \\
+$V_{CN}= \frac{V_L}{\sqrt{3}}\ \angle120^{\circ}  $    \\
+$V_{AB} = V_L\ \angle 30^{\circ} $    \\
+$V_{BC} = V_L\ \angle -90^{\circ}  $    \\
+$V_{CA} = V_L\ \angle 150^{\circ} $    \\
+
+Secuencia negativa o CBA
+
+$V_{AN}= \frac{V_L}{\sqrt{3}}\ \angle 0^{\circ}  $    \\
+$V_{BN}= \frac{V_L}{\sqrt{3}}\ \angle 120^{\circ}  $    \\
+$V_{CN}= \frac{V_L}{\sqrt{3}}\ \angle -120^{\circ}  $  \\
+$V_{AC} = V_L\ \angle 30^{\circ} $    \\
+$V_{CB} = V_L\ \angle -90^{\circ}  $    \\
+$V_{BA} = V_L\ \angle 150^{\circ} $    \\
+
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/secp.png}
+	\caption{(a) Secuencia Positiva. b) Secuencuencia Negativa}
+	\label{sec}
+\end{figure}
+
+
+
+
+    
+\end{enumerate}
+    
+\end{document}

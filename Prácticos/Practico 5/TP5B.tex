@@ -1,0 +1,244 @@
+% ***********************************************
+%***********COSAS A MEJORAR O CORREGIR***********
+%
+%
+%
+%
+%
+%
+%
+% ***********************************************
+% Preamble
+% ---
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+% ---
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{layout}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{lastpage}
+\usepackage{tabto}
+\usepackage{xcolor}
+\usepackage[a4paper, top=1 in,bottom=1in, left=1 in, right=0.7 in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{comment}
+
+
+
+
+
+\lhead{\footnotesize Teoría de los circuitos 1 - Año \the\year{} Ver. 2022.01.12}
+\chead{}
+\rhead{\footnotesize Trabajo Práctico N$^\text o$5.}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+	\textsc{\includegraphics[width=0.35\textwidth]{logoUTN.jpg}} ~\\
+	{\large Departamento de Electr\'onica}\\ 
+	[0.1cm]
+	{\Huge{Teoría de circuitos 1}} \\
+	[0.25cm]
+	{\Large{Trabajo Práctico N$^{\text {o}}$5 parte B: Potencia en CC y CA}		
+}}
+\author{}
+\date{}
+    
+\begin{document}
+	\maketitle
+
+\begin{enumerate}
+	
+% ***********************************************
+% 					Ejercicio 1
+% ***********************************************
+
+\item en el siguiente circuito se indican las potencias consumidas por cada resistencia, determinar:
+
+\begin{enumerate}
+	\item La disipación de potencia total
+	\item La potencia reactiva total
+	\item la corriente de la fuente $I_g$
+	\item El valor de cada resistencia 
+	\item Determine las corrientes $I_1$ e $I_2$
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/1.png}
+	\label{e1}
+\end{figure}
+
+Rta: a. $P_T=130$ W, b. $Q_T=0$ VAR, $S_T=130$ VA, c. $I_g=0.542$ A, d. $R_1=204.5\Omega$, $R_2=371.12\Omega$, $R_3=668.9\Omega$, e. $I_2=0.384A$, $I_3=0.193A$
+
+
+% ***********************************************
+% 					Ejercicio 2
+% ***********************************************
+\item Para el sistema de la figura: 
+
+\begin{enumerate}
+	\item Determinar la potencia activa total, la potencia reactiva total, la potencia aparente total y el factor de potencia  
+	\item Trace el triángulo de potencias   
+	\item Determine la corriente $I_f$
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/2.png}
+	\label{e2}
+\end{figure}
+
+% ***********************************************
+% 					Ejercicio 3
+% ***********************************************
+\item Dado el siguiente circuito deterimne:   
+
+\begin{enumerate}
+	\item La potencia activa suministrada a cada elemento   
+	\item La potencia reactiva en cada elemento
+	\item La potencia aparente en cada elemento   
+	\item Determine $P_T$, $Q_T$, $S_T$ y $F_p$   
+	\item Grafique el trángulo de potencias  
+	\item Determine $I_t$    
+\end{enumerate}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/3.png}
+	\label{e3}
+\end{figure}
+
+Rta: a. $P_R=20W$ $P_{L,C}=0W$, b. $Q_R=0$VAR $Q_C=80$ VAR $ Q_L=100$ VAR c. $S_R=200$ VA $S_L=j100$VA $S_C=j80VA$ d. $P_T=200$ W  $Q_T=20$VAR ($L$) $S_T= (200+j20)$VA $F_p=0.995$ e. $I_t=10.05A \angle-5.73^\circ$
+
+% ***********************************************
+% 					Ejercicio 4
+% ***********************************************
+
+\item  Utilizando el teorema de Thévenin, hallar la potencia disipada en una resistencia de $1\Omega$, conectada en los terminales $A-B$ del circuito de la figura.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/4.png}
+	\label{e4}
+\end{figure}
+
+Rta: $P=1.5$W
+
+% ***********************************************
+% 					Ejercicio 5
+% ***********************************************
+\item Una carga eléctrica funciona a $240$ V (rms). La carga absorbe una potencia media de $8$ KW
+con un factor de potencia de $0.8$ en atrazo. Calcular la impedancia y la potencia compleja de
+la carga.  
+Rta: $Z=(4.608+j3.456)\Omega$ $S=(8+j6)$ KVA
+
+% ***********************************************
+% 					Ejercicio 6
+% ***********************************************
+ \item En el circuito de la figura, una carga con impedancia de $(39 + j 26)\Omega$ está conectada a una fuente de voltaje a través de una línea que tiene impedancia de $(1 +j4)\Omega$. El valor eficaz de la fuente de voltaje es de $250$V. Calcular:   
+ \begin{enumerate}
+ 	\item La potencia media y la reactiva que se suministran a la carga   
+ 	\item La potencia media y la reactiva que se suministran a la línea   
+ 	\item La potencia media y la reactiva que suministra la fuente. 	
+ \end{enumerate}
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/5.png}
+	\label{e6}
+\end{figure}
+  
+Rta: a. $S=(975+j650)$VA b. $P=25W$ $Q=100$VA c. $S=(1000+j750)$VA
+% ***********************************************
+% 					Ejercicio  7
+% ***********************************************
+\item El circuito serie de la figura consume $300 W$ con un factor de potencia de $0,6$ en retraso. Hallar el valor de la impedancia y determinar el triángulo de potencias:.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/6.png}
+	\label{e7}
+\end{figure}
+
+Rta: $Z=j4\Omega$, $S=(300+j400)$VA
+% ***********************************************
+% 					Ejercicio 8
+% ***********************************************
+\item Una instalación consume una potencia activa de $5,2$ kW y una potencia reactiva de $1,1$ kVAR en atraso. Calcular el ángulo de desfasaje y el factor de potencia.
+% ***********************************************
+% 					Ejercicio 9
+% ***********************************************
+\item Una instalación consume $3,5kW $de potencia activa y tiene un factor de potencia de $0,8$. Calcular la potencia reactiva y la potencia aparente.
+
+
+% ***********************************************
+% 					Ejercicio 10
+% ***********************************************
+
+\item Una instalación alimentada con $220$V  y $50$Hz consume una potencia activa de $2$ kW con factor de potencia de $0.8$ y corriente en atraso. Calcular la capacidad necesaria a conectar en paralelo a la línea para obtener un factor de potencia de $0,95$.
+
+
+% ***********************************************
+% 					Ejercicio 11
+% ***********************************************
+\item Un motor monofásico que consume una potencia aparente $S=300$VA y tiene un factor de potencia $FP= 0,7$ se conecta al sistema de distribución nacional ($V_{ef}=220$V y $f=50$Hz).
+\begin{enumerate}
+	\item Calcular el valor del capacitor para llevar el factor de potencia a $0,93$ en atraso.
+	\item Calcular la corriente entregada al sistema antes y después de la corrección. 
+\end{enumerate}
+
+
+
+
+% ***********************************************
+% 					Ejercicio 12
+% ***********************************************
+\item Demostrar el teorema de máxima transferencia de potencia.
+
+
+% ***********************************************
+% 					Ejercicio 13
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 14
+% ***********************************************
+
+% ***********************************************
+% 					Ejercicio 15
+% ***********************************************
+
+
+
+% ***********************************************
+% 					Ejercicio 16
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 17
+% ***********************************************
+
+
+
+% ***********************************************
+% 					Ejercicio  18
+% ***********************************************
+
+
+
+    
+\end{enumerate}
+    
+\end{document}

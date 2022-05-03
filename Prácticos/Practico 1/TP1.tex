@@ -1,0 +1,513 @@
+% ***********************************************
+%***********COSAS A MEJORAR O CORREGIR***********
+%
+%
+%
+%
+%
+%
+% ***********************************************
+% Preamble
+% ---
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+% ---
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{layout}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{lastpage}
+\usepackage{tabto}
+\usepackage{xcolor}
+\usepackage[a4paper, top=1 in,bottom=1in, left=1 in, right=0.7 in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{comment}
+
+%ELEGIR VERSION 
+%Comentar para eliminar la solucion de todos los ejercicios y dejar la version para los 
+% alumnos, a saber con un solo punto resuelto por ejercicio.
+
+
+
+\lhead{\footnotesize Teoría de los circuitos 1 - Año \the\year{} Ver. 2022.01.12}
+\chead{}
+\rhead{\footnotesize Trabajo Práctico N$^\text o$1.}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+	\textsc{\includegraphics[width=0.35\textwidth]{logoUTN.jpg}} ~\\
+	{\large Departamento de Electr\'onica}\\ 
+	[0.1cm]
+	{\Huge{Teoría de circuitos 1}} \\
+	[0.25cm]
+	{\Large{Trabajo Práctico N$^{\text {o}}$1: Resolución sistemática de circuitos y Aplicación de Teoremas Fundamentales}		\\
+}}
+\author{}
+\date{}
+    
+\begin{document}
+	\maketitle
+	
+\section*{Resolución de circuitos simples:}
+\begin{enumerate}
+	
+% ***********************************************
+% 					Ejercicio 1
+% ***********************************************
+
+\item {Dado el circuito de la figura \ref{e1} encontrar el valor de la intensidad de corriente $I$ y la caída de tensión en $R_2$. Demostrar que se cumple la Ley de Kirchhoff para las tensiones.}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_2_0.png}
+	\caption{circuito esquemático del ejercicio 1.}
+	\label{e1}
+\end{figure}
+
+Rta: $I=-\frac{2}{11}\ mA$; $V_{R2}=-\frac{8}{11}V$
+
+% ***********************************************
+% 					Ejercicio 2
+% ***********************************************
+
+\item El circuito que se muestra en la figura \ref{e2}  es conocido como divisor de tensión. Este es un circuito serie donde la caída de tensión en cada resistencia es un porcentaje de la fuente de alimentación. Dicho porcentaje está dado por la relación enrtre el valor de cada una de las resistencias y la resistencia total del circuito. Obtenga la expresión de la tensión en cada una de las resistencias del circuito.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_6_0.png}
+	\caption{circuito esquemático del ejercicio 2.}
+	\label{e2}
+\end{figure}
+
+    Rta: $V_{R1}=\frac{V_1 \times R_{1}}{R_1+R_2}$, $V_{R2}=\frac{V_1 \times R_{2}}{R_1+R_2}$
+
+% ***********************************************
+% 					Ejercicio 3
+% ***********************************************
+
+\item Plantear la expresión de la diferencia de potencial en función de la corriente entre los terminales $a$ y $b$ en cada una de las ramas presentadas a continuación. Suponer que los terminales $a$ y $b$ están conectados a un circuito que no se muestra en la gráfica de manera que existen caminos para que circulen las corrientes allí definidas.
+
+\begin{enumerate}
+	
+\item  \
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 		1_8_0.png}
+
+		\label{e3a}
+	\end{figure}
+
+Ejemplo: \(V_{a1-b1}=V-V_{R_1}=V-I_1 \times R_1\)
+
+
+\item \
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_11_0.png}
+
+	\label{e3b}
+\end{figure}
+
+\end{enumerate}
+
+
+%Ejemplo: $V_{a1-b1}=V-V_{R_1}$, utilizando ley de Ohm para reemplazar $V_R$: $V_{a1-b1}=V-(-)I_1 \times R_1=V+I_1 \times R_1$
+
+% ***********************************************
+% 					Ejercicio 4
+% ***********************************************
+
+\item Calcular el voltaje de las fuentes de tensión de los siguientes circuitos.
+
+\begin{enumerate}
+	
+	\item \
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_14_0.png}
+	\label{e4a}
+\end{figure}
+    
+Rta: \(V_1=12V\)
+
+\item \
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_16_0.png}
+
+	\label{e4b}
+	
+\end{figure}
+Rta: \(V_1=50V\)
+
+\end{enumerate}
+
+% ***********************************************
+% 					Ejercicio 5
+% ***********************************************
+
+\item Dado el circuito de la figura, calcular el valor de la tensión $V$ y el de las corrientes que circulan por $R_1$, $R_2$, $R_3$. Demostrar que se cumple la Ley de Kirchhoff para las corrientes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_18_0.png}
+	
+	\label{e5}
+	
+\end{figure}
+
+Rta: $V=4V$,
+$I_{R1} = 2A$,
+$I_{R2} = 1A$,
+$I_{R3} = 2A$
+% ***********************************************
+% 					Ejercicio 6
+% ***********************************************
+\item El circuito de la siguiente figura es conocido como divisor de corriente ya que la corriente de una fuente se distribuye entre dos o más resistencias conectadas en paralelo. Obtenga la expresión de la corriente en cada una de las resistencias del circuito.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_29_0.png}
+	\label{e6}
+\end{figure}
+
+
+
+% ***********************************************
+% 					Ejercicio  7
+% ***********************************************
+\item Investigue el principio de funcionamiento de un voltímetro y de un amperímetro analógico. Explique cómo se deben conectar en un circuito y describa cómo es desaeble que sea la resistencia interna de cada uno de estos instrumentos y justifique.
+
+
+% ***********************************************
+% 					Ejercicio 8
+% ***********************************************
+\item  En el siguiente diagrama se presenta un circuito eléctrico que se utiliza para medir valores de resistencia. Este circuito es conocido como \textbf{puente de Wheatstone}. Invesitigue sobre este circuito y describa su funcionamiento
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_33_0.png}
+	\label{e8}
+\end{figure}
+
+Entre \textbf{a} y \textbf{b} se conecta un voltímetro. $R_{1}$ y $R_{3}$ son resistencias conocidas y $R_{2}$ una resistencia variable. $R_{x}$ es la resistencia a medir.
+
+
+\section*{Principios fundamentales.}
+
+
+
+
+
+
+% ***********************************************
+% 					Ejercicio 9
+% ***********************************************
+\item Obtener el equivalente de Thévenin de los siguientes circuitos:
+
+\begin{enumerate}
+	\item \
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_36_0.png}
+	\label{e9a}
+\end{figure}
+
+Rta: $V_{Th}=I \times R_{1}$ y $R_{Th}= R_1$
+	
+	\item \
+	
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_39_0.png}
+	\label{e9b}
+\end{figure}
+
+Rta: $V_{Th}=-10V$ y $R_{Th}=2\Omega$
+
+\item \
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_41_0.png}
+	\label{e9c}
+\end{figure}
+
+Rta: $V_{Th}=-52V$ y $R_{Th}=4\Omega$
+
+\end{enumerate}
+
+% ***********************************************
+% 					Ejercicio 10
+% ***********************************************
+\item Obtener el equivalente de Norton de los siguientes circuitos:
+
+\begin{enumerate}
+	\item \
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_43_0.png}
+	\label{e10a}
+\end{figure}
+
+Rta: $I_{N}=2,5A$ y $R_{N}=4\Omega$
+
+	\item \
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_45_0.png}
+	\label{e10b}
+\end{figure}
+
+Rta: $I_{N}=4A$ y $R_{N}=5\Omega$
+
+\end{enumerate}
+
+% ***********************************************
+% 					Ejercicio 11
+% ***********************************************
+\item Dado los siguientes circuitos, encontrar el equivalente de Norton y de Thévenin aplicando el principio de superposición.
+\begin{enumerate}
+	\item \
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_47_0.png}
+		\label{e11a}
+	\end{figure}
+Rta: $V_{Th}=288V$ y $R_{Th}=2,97\Omega$, $I_{N}=97A$ y $R_{N}=2,97\Omega$
+	\item \
+		
+		\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_49_0.png}
+		\label{e11b}
+	\end{figure}
+Rta: $V_{Th}=112V$, $R_{Th}=16\Omega$, $I_{N}=7A$ y $R_{N}=16\Omega$
+	\item \
+		\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_51_0}
+		\label{e11c}
+	\end{figure}
+	
+	Rta: $V_{Th}=-7,5V$, $R_{Th}=7,5k\Omega$, $I_{N}=-1mA$ y $R_{N}=7,5k\Omega$
+
+\end{enumerate}
+
+% ***********************************************
+% 					Ejercicio 12
+% ***********************************************
+\item  Encontrar el valor de $I_{0}$ aplicando transformación de fuentes.
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_53_0}
+	\label{e12}
+\end{figure}
+
+
+Rta: $I_0=4,31mA$
+
+\section*{Resolución sistemática de circuitos.}
+
+% ***********************************************
+% 					Ejercicio 13
+% ***********************************************
+\item Utilizando el método de las corrientes de malla encontrar el valor de la tensión o corriente indicada en el esqumático correspondiente:
+
+\begin{enumerate}
+	
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_58_0}
+		\label{e13a}
+	\end{figure}
+	
+	Rta: $I_x=1A$
+	
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_60_0}
+		\label{e13b}
+	\end{figure}
+	
+	Rta: $V_x=\frac{-7}{5} V$
+	
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_62_0.png}
+		\label{e13c}
+	\end{figure}
+	Rta: $I_x=-1,46A$
+
+\end{enumerate}
+
+% ***********************************************
+% 					Ejercicio 14
+% ***********************************************
+\item Calcule las incógnitas solicitadas en los siguientes circuitos aplicando el método de corrientes de malla con ramas virtuales:
+
+\begin{enumerate}
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_64_0.png}
+		\label{e14a}
+	\end{figure}
+	Rta: $V_x=-\frac{4}{3}V$
+	\item \
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_66_0.png}
+		\label{e14b}
+	\end{figure}
+	Rta: $V_x=\frac{5}{2}V$
+	
+		\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_68_0.png}
+		\label{e14c}
+	\end{figure}
+	
+	Rta: $V_x=-1,91V$
+	
+\end{enumerate}
+
+
+
+
+% ***********************************************
+% 					Ejercicio 15
+% ***********************************************
+\item Utilizando el método de las \textbf{tensiones nodales} calcular las incógnitas solicitadas en los siguientes circuitos.
+
+\begin{enumerate}
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_70_0.png}
+		\label{e15a}
+	\end{figure}
+	Rta: $V_x=5,82V$
+	
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_72_0.png}
+		\label{e15b}
+	\end{figure}
+	Rta: $I_x=-\frac{2}{13}A$
+	
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_74_0.png}
+		\label{e15c}
+	\end{figure}
+	Rta: $I_x=4,75A$
+\end{enumerate}
+% ***********************************************
+% 					Ejercicio 16
+% ***********************************************
+\item Resuelva los siguientes circuitos aplicando el método de análisis de \textbf{tensiones nodales con super-nodos}.
+
+\begin{enumerate}
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_76_0.png}
+		\label{e16a}
+	\end{figure}
+	
+	Rta: $I_x=-1A$
+
+	\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_78_0.png}
+		\label{e16b}
+	\end{figure}
+	Rta: $V_x=-5,56V$
+	
+		\item \
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{Trabajo práctico Nº 1_files/Trabajo práctico Nº 1_80_0.png}
+		\label{e16c}
+	\end{figure}
+	
+	Rta: $I_x=20A$
+
+\end{enumerate}
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+% ***********************************************
+% 					Ejercicio 
+% ***********************************************
+
+
+    
+\end{enumerate}
+    
+\end{document}

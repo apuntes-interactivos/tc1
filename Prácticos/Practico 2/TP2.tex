@@ -1,0 +1,349 @@
+% ***********************************************
+%***********COSAS A MEJORAR O CORREGIR***********
+%
+%
+%
+%
+%
+%
+%
+% ***********************************************
+% Preamble
+% ---
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+% ---
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{layout}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+\usepackage{lastpage}
+\usepackage{tabto}
+\usepackage{xcolor}
+\usepackage[a4paper, top=1 in,bottom=1in, left=1 in, right=0.7 in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{comment}
+
+
+
+
+
+\lhead{\footnotesize Teoría de los circuitos 1 - Año \the\year{} Ver. 2022.01.12}
+\chead{}
+\rhead{\footnotesize Trabajo Práctico N$^\text o$2.}
+\lfoot{}
+\cfoot{}
+\rfoot{\footnotesize P\'agina \thepage\ de \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\title{
+	\textsc{\includegraphics[width=0.35\textwidth]{logoUTN.jpg}} ~\\
+	{\large Departamento de Electr\'onica}\\ 
+	[0.1cm]
+	{\Huge{Teoría de circuitos 1}} \\
+	[0.25cm]
+	{\Large{Trabajo Práctico N$^{\text {o}}$2}		\\
+}}
+\author{}
+\date{}
+    
+\begin{document}
+	\maketitle
+	
+\section{Régimen permanente}
+\begin{enumerate}
+	
+% ***********************************************
+% 					Ejercicio 1
+% ***********************************************
+
+\item Dado el siguiente circuito:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{img/1.png}
+	\label{e1}
+\end{figure}
+
+\begin{enumerate}
+
+	 \item Calcular las reactancias. 
+
+	 \item Calcular la impedancia total y expresarla en forma polar y binómica.
+
+	 \item Calcular la corriente en forma polar y luego expresarla en función del tiempo.
+
+	 \item Calcular la tensión en cada elemento en forma polar y luego expresarla en función del tiempo.
+
+	 \item Graficar las tensiones de cada elemento en función del tiempo.
+
+	 \item Graficar el diagrama fasorial.
+	 
+\end{enumerate}
+
+Rtas: a) $X_C=10 \Omega$; $X_L=20 \Omega$; b)$Z_T=(10+j10)\Omega=\sqrt{200}\angle{45^{\circ}}\Omega$; c) $\bar{I}=2,12\angle{-45^{\circ}}[A]$; $i(t)=2,12\,sin(2.\pi 50Hz.t+\frac{\pi}{4})[A]$; d)$\bar{V}_R=21,2\angle{45^{\circ}}[V]$; $\bar{V}_C=21,2\angle{-45^{\circ}}[V]$; $\bar{V_L}=42,4\angle{135^{\circ}}[V]$\\
+
+% ***********************************************
+% 					Ejercicio 2
+% ***********************************************
+
+
+\item A una impedancia $Z= (10 + j15)\Omega$ se le aplica una tensión de $v(t) = 141,2\, cos(2000 t + \pi / 4) [V]$.
+
+\begin{enumerate}
+	\item Dibujar el diagrama del circuito.
+	\item Calcular la corriente que circula en el circuito expresada en forma polar.
+	\item Expresar la corriente en función del tiempo.
+\end{enumerate}
+
+
+Rta: b) $\bar{I}=7,83\angle{-11,31^{\circ}}[A]$, c) $i(t)=7,83\,cos(2000t-11,31^{\circ})[A]$
+% ***********************************************
+% 					Ejercicio 3
+% ***********************************************
+
+\item La corriente que circula en un circuito serie es $\bar{I}=(4 + j12) [A]$ cuando la tensión aplicada es de $V=180 \angle{55^{\circ}}[V]$
+
+\begin{enumerate}
+	
+	\item Determinar la impedancia del circuito y expresarla en las formas polar y binómica.
+
+	\item Indicar si la reactancia es capacitiva o inductiva. Justifique.
+
+\end{enumerate}
+	
+Rta: a) $\bar{Z}=(13,64-j4,06)\Omega=14,23\angle{-16,57^{\circ}}\Omega$
+
+
+% ***********************************************
+% 					Ejercicio 4
+% ***********************************************
+\item La fuente de tensión  del circuito de la figura reproduce la función $v(t)=100\,cos(5 \times 10^3.t + 45^{\circ})$[V] 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/2.png}
+	\label{e2}
+\end{figure}
+
+hallar:
+
+\begin{enumerate}
+
+\item Intensidad de corriente total expresada en forma trigonométrica.
+
+\item El valor de las corrientes $\bar{I}_1$ e $\bar{I}_2$ y las caídas de tensión en cada elemento expresando las respuestas en forma binómica.
+
+\item Dos elementos en serie que produzcan la misma corriente $\bar{I_t}$.
+
+\item Dos elementos en paralelo que produzcan la misma corriente $\bar{I_t}$. (ayuda: resolver pensando el circuito en términos de admitancias)
+
+\end{enumerate}
+
+Rta: a) $\bar{I}_t=(6,84+j17,21)[A]$ b) $\bar{I}_1=(9,67-j2,59)[A]$; $\bar{I}_2=(-2,82-j19,8)[A]$; c) $R=4,96\Omega$ $C=93,55\mu F$ d) $R=5.88\Omega$ $C=14.67\mu F$
+
+% ***********************************************
+% 					Ejercicio 5
+% ***********************************************
+\item Dado el siguiente circuito y siendo $\bar{V_1}=35,36 \angle 0^{\circ}[V]$ y $\bar{V_2}=35,36 \angle 90^{\circ}[V]$ , calcular:
+
+\begin{enumerate}
+	\item La impedancia equivalente del circuito.
+	\item La corriente 
+	\item La diferencia de potencial en cada elemento
+	\item Graficar el diagrama fasorial que muestre la corriente y las tensiones en el circuito.
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/3.png}
+	\label{e5}
+\end{figure}
+
+Rta: a) $\bar{Z}_{eq}=(10-j10)\Omega$; b) $\bar{I}=3,536j[A]$; c) $\bar{V}_R=35,36j[V]$; $\bar{V}_L=-70,72[V]$; $\bar{V}_C=106,8[V]$
+
+% ***********************************************
+% 					Ejercicio 6
+% ***********************************************
+\item Un capacitor de $100 \mu F$ está conectado en serie con una bobina real que posee asociada una resistencia de $5 \Omega$ y una inductancia de $0,12 Hy$ . El módulo de la corriente que circula en el circuito es  $|\bar{I}|=64,85 [A]$. La corriente está retrasada $49,6^{\circ}$ con respecto a la tensión suministrada. La frecuencia de trabajo es de $50 Hz$ 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/4.png}
+	\label{e6}
+\end{figure}
+
+\begin{enumerate}
+	\item Calcular el valor r.m.s. de la tensión en la bobina y en el capacitor 
+	\item ¿Cuál es el valor de la tensión de alimentación?
+	\item Indicar si el circuito se comporta de manera inductiva o capacitiva.
+\end{enumerate}
+
+Rta: $\bar{V}_L=2466,25 \angle{32,85°}[V]$; $\bar{V}_C=2064,18\angle{-139,6°}[V]$; $\bar{V}_G=500\angle{0°}[V]$
+% ***********************************************
+% 					Ejercicio  7
+% ***********************************************
+\item Dado el siguiente circuito calcular:
+
+\begin{enumerate}
+	\item La impedancia del circuito.
+	\item La corriente total
+	\item La corriente que circula en cada elemento.
+	\item La tensión entre los nodos A-B y B-C.
+\end{enumerate}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{img/5.png}
+	\label{e7}
+\end{figure}
+
+Rta: a) $Z=18,97\angle{-18,43^{\circ}}\Omega$; b) $\bar{I}_{total}=(1+j0,33)[A]$; c) $\bar{I}_1=(0,67+j0,67)[A]$; $\bar{I}_2=(0,33-j0,33)[A]$  ;$\bar{I}_3=(6,66-j3,33)[A]$; $\bar{I}_4=(3,33+j6,66)[A]$ d) $\bar{V}_{AB}=(6,67+j6,67)[V]$; $\bar{V}_{BC}=(13,33-j6,67)[V]$
+% ***********************************************
+% 					Ejercicio 8
+% ***********************************************
+\item Dado el siguiente circuito, enconrtrar el equivalente de Norton entre los terminales A-B.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/6.png}
+	\label{e8}
+\end{figure}
+
+Rta: $\bar{I}_N=2,43\angle{210,68°}[A]$; $Z_N=5,71\angle{-47,77°}\Omega$
+% ***********************************************
+% 					Ejercicio 9
+% ***********************************************
+\item Obtener el quivalente de Thévenin del siguiente circuito entre los terminales A-B. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/7.png}
+	\label{e9}
+\end{figure}
+
+Rta: $V_{Th}=20V$ $Z_{Th}=1,22\Omega$
+% ***********************************************
+% 					Ejercicio 10
+% ***********************************************
+
+\item Encontrar el equivalente de Thévenin del siguiente circuito entre los términales A-B. Resolver Alplicando el método de corrientes de mallas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/8.png}
+	\label{e10}
+\end{figure}
+
+Rta: $\bar{V}_{Th}=20\angle{0°}[V]$; $Z_{Th}=(3,32+j1,41)\Omega$
+
+% ***********************************************
+% 					Ejercicio 11
+% ***********************************************
+\item  Dado el siguiente circuito, encontrar el equivalente de Thévenin entre los terminales A-B
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/9.png}
+	\label{e11}
+\end{figure}
+
+
+Rta: $\bar{V}_{Th}=835,22 \angle{-20,17°}[V]$; $Z_{Th}=(120-j60)\Omega$
+
+\section{Resonancia y lugares geométricos.}
+% ***********************************************
+% 					Ejercicio 12
+% ***********************************************
+
+\item Dado el siguiente circuito, calcular:
+
+\begin{enumerate}
+	\item La frecuencia de resonancia.
+	\item El factor de mértito Q.
+	\item El ancho de banda.
+	\item Las frecuencias cuadrantales.
+	\item La tensión en cada elemento cuando el circuito se encuentra en resonancia.
+	
+\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{imgb/1.png}
+	\label{e12}
+\end{figure}
+
+a) $\omega_0=4000 \frac{rad}{seg}$ ; b) $Q=2$; c) $BW=2000\frac{rad}{seg}$; d) $f_1=497Hz$; $f_2=815,36$; e) $\bar{V}_R=100\angle{0°}[V]$; $\bar{V}_L=200\angle{90°}[V]$; $\bar{V}_C=200\angle{-90°}[V]$
+
+% ***********************************************
+% 					Ejercicio 13
+% ***********************************************
+\item En el circuito del ejercicio 1, qué elemento habrá que modificar para aumentar el ancho de banda a $3000 \frac{rad}{seg}$, sin alterar $\omega_0$. Justifique. ¿Cuál sería su nuevo valor?
+
+Rta: $R=15\Omega$
+
+% ***********************************************
+% 					Ejercicio 14
+% ***********************************************
+\item Se desea disminuir en un $50\%$ el ancho de banda del siguiente circuito manteniendo constante $\omega_{0}$ e $\bar{I}$. ¿Qué elementos se deberán modificar y cuáles son sus valores?
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{imgb/2.png}
+	\label{e14}
+\end{figure}
+
+Rta: $L=20mHy$; $C=12,5\mu F$
+% ***********************************************
+% 					Ejercicio 15
+% ***********************************************
+\item Calcular el valor de $R_L$ para que el circuito de la figura entre en resonancia.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{imgb/3.png}
+	\label{e15}
+\end{figure}
+
+
+% ***********************************************
+% 					Ejercicio 16
+% ***********************************************
+\item La tensión aplicada a un circuito serie formado por una reactancia inductiva fija $X_L=5\Omega$ y una resistencia varible $R$, es $\bar{V}=50\angle{0^{\circ}}[V]$. Trazar los lugares geométricos de la admitancia y de la intensidad de corriente.
+
+% ***********************************************
+% 					Ejercicio 17
+% ***********************************************
+\item En el circuito paralelo de la figura, la reactancia inductiva puede variar sin límites. Trazar el lugar geométrico de la admitancia total y demostrar que no es posible la resonancia.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{imgb/4.png}
+	\label{e17}
+\end{figure}
+% ***********************************************
+% 					Ejercicio  18
+% ***********************************************
+\item  Hallar el valor de $R$ para que el siguiente circuito entre en resonancia y trazar el lugar geométrico de la admitancia equivalente del circuito.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{imgb/5.png}
+	\label{e18}
+\end{figure}
+
+
+    
+\end{enumerate}
+    
+\end{document}
